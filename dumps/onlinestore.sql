@@ -2,10 +2,10 @@
 -- version 4.2.11
 -- http://www.phpmyadmin.net
 --
--- Хост: 127.0.0.1
--- Время создания: Июл 31 2015 г., 21:22
--- Версия сервера: 5.6.21
--- Версия PHP: 5.5.19
+-- Host: 127.0.0.1
+-- Generation Time: Aug 03, 2015 at 04:11 PM
+-- Server version: 5.6.21
+-- PHP Version: 5.5.19
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- База данных: `onlinestore`
+-- Database: `onlinestore`
 --
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `eng_categories`
+-- Table structure for table `eng_categories`
 --
 
 CREATE TABLE IF NOT EXISTS `eng_categories` (
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `eng_categories` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `eng_customers`
+-- Table structure for table `eng_customers`
 --
 
 CREATE TABLE IF NOT EXISTS `eng_customers` (
@@ -50,7 +50,7 @@ CREATE TABLE IF NOT EXISTS `eng_customers` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `eng_delivery`
+-- Table structure for table `eng_delivery`
 --
 
 CREATE TABLE IF NOT EXISTS `eng_delivery` (
@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `eng_delivery` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `eng_goods`
+-- Table structure for table `eng_goods`
 --
 
 CREATE TABLE IF NOT EXISTS `eng_goods` (
@@ -84,7 +84,7 @@ CREATE TABLE IF NOT EXISTS `eng_goods` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `eng_informers`
+-- Table structure for table `eng_informers`
 --
 
 CREATE TABLE IF NOT EXISTS `eng_informers` (
@@ -96,7 +96,7 @@ CREATE TABLE IF NOT EXISTS `eng_informers` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `eng_links`
+-- Table structure for table `eng_links`
 --
 
 CREATE TABLE IF NOT EXISTS `eng_links` (
@@ -112,7 +112,7 @@ CREATE TABLE IF NOT EXISTS `eng_links` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `eng_news`
+-- Table structure for table `eng_news`
 --
 
 CREATE TABLE IF NOT EXISTS `eng_news` (
@@ -126,20 +126,20 @@ CREATE TABLE IF NOT EXISTS `eng_news` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `eng_ordered_goods`
+-- Table structure for table `eng_ordered_goods`
 --
 
 CREATE TABLE IF NOT EXISTS `eng_ordered_goods` (
-`id` int(11) NOT NULL,
-  `order_id` int(11) NOT NULL,
-  `goods_id` int(11) NOT NULL,
+`id` int(11) unsigned NOT NULL,
+  `order_id` int(11) unsigned NOT NULL,
+  `goods_id` int(11) unsigned NOT NULL,
   `quantity` int(5) unsigned NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `eng_orders`
+-- Table structure for table `eng_orders`
 --
 
 CREATE TABLE IF NOT EXISTS `eng_orders` (
@@ -154,7 +154,7 @@ CREATE TABLE IF NOT EXISTS `eng_orders` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `eng_pages`
+-- Table structure for table `eng_pages`
 --
 
 CREATE TABLE IF NOT EXISTS `eng_pages` (
@@ -169,7 +169,7 @@ CREATE TABLE IF NOT EXISTS `eng_pages` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `eng_payment`
+-- Table structure for table `eng_payment`
 --
 
 CREATE TABLE IF NOT EXISTS `eng_payment` (
@@ -178,120 +178,120 @@ CREATE TABLE IF NOT EXISTS `eng_payment` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Индексы сохранённых таблиц
+-- Indexes for dumped tables
 --
 
 --
--- Индексы таблицы `eng_customers`
+-- Indexes for table `eng_customers`
 --
 ALTER TABLE `eng_customers`
  ADD PRIMARY KEY (`id`);
 
 --
--- Индексы таблицы `eng_delivery`
+-- Indexes for table `eng_delivery`
 --
 ALTER TABLE `eng_delivery`
  ADD PRIMARY KEY (`id`);
 
 --
--- Индексы таблицы `eng_goods`
+-- Indexes for table `eng_goods`
 --
 ALTER TABLE `eng_goods`
  ADD PRIMARY KEY (`id`);
 
 --
--- Индексы таблицы `eng_informers`
+-- Indexes for table `eng_informers`
 --
 ALTER TABLE `eng_informers`
  ADD PRIMARY KEY (`id`);
 
 --
--- Индексы таблицы `eng_links`
+-- Indexes for table `eng_links`
 --
 ALTER TABLE `eng_links`
  ADD PRIMARY KEY (`id`);
 
 --
--- Индексы таблицы `eng_news`
+-- Indexes for table `eng_news`
 --
 ALTER TABLE `eng_news`
  ADD PRIMARY KEY (`id`);
 
 --
--- Индексы таблицы `eng_ordered_goods`
+-- Indexes for table `eng_ordered_goods`
 --
 ALTER TABLE `eng_ordered_goods`
  ADD PRIMARY KEY (`id`);
 
 --
--- Индексы таблицы `eng_orders`
+-- Indexes for table `eng_orders`
 --
 ALTER TABLE `eng_orders`
  ADD PRIMARY KEY (`id`);
 
 --
--- Индексы таблицы `eng_pages`
+-- Indexes for table `eng_pages`
 --
 ALTER TABLE `eng_pages`
  ADD PRIMARY KEY (`id`);
 
 --
--- Индексы таблицы `eng_payment`
+-- Indexes for table `eng_payment`
 --
 ALTER TABLE `eng_payment`
  ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT для сохранённых таблиц
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT для таблицы `eng_customers`
+-- AUTO_INCREMENT for table `eng_customers`
 --
 ALTER TABLE `eng_customers`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT для таблицы `eng_delivery`
+-- AUTO_INCREMENT for table `eng_delivery`
 --
 ALTER TABLE `eng_delivery`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT для таблицы `eng_goods`
+-- AUTO_INCREMENT for table `eng_goods`
 --
 ALTER TABLE `eng_goods`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT для таблицы `eng_informers`
+-- AUTO_INCREMENT for table `eng_informers`
 --
 ALTER TABLE `eng_informers`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT для таблицы `eng_links`
+-- AUTO_INCREMENT for table `eng_links`
 --
 ALTER TABLE `eng_links`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT для таблицы `eng_news`
+-- AUTO_INCREMENT for table `eng_news`
 --
 ALTER TABLE `eng_news`
 MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT для таблицы `eng_ordered_goods`
+-- AUTO_INCREMENT for table `eng_ordered_goods`
 --
 ALTER TABLE `eng_ordered_goods`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT для таблицы `eng_orders`
+-- AUTO_INCREMENT for table `eng_orders`
 --
 ALTER TABLE `eng_orders`
 MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT для таблицы `eng_pages`
+-- AUTO_INCREMENT for table `eng_pages`
 --
 ALTER TABLE `eng_pages`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT для таблицы `eng_payment`
+-- AUTO_INCREMENT for table `eng_payment`
 --
 ALTER TABLE `eng_payment`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
