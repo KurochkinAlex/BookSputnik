@@ -1,5 +1,5 @@
 <?php
-class Route 
+final class Route 
 {
     public function getStart() 
     {
