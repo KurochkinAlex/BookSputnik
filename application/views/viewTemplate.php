@@ -18,6 +18,15 @@
         <![endif]-->
   </head>
   <body>
+      <div class="navbar navbar-inverse navbar-fixed-top">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainMenu">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+          </div>
+      </div>
       <script src="js/bootstrap.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   </body>
