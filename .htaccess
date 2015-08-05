@@ -1,9 +1,5 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-<<<<<<< HEAD
-RewriteRule ^(.*)$ index.php?route=$1 
-=======
 RewriteRule ^(.*)$ index.php?route=$1 [L,QSA]
 Options -Indexes
->>>>>>> origin/master
