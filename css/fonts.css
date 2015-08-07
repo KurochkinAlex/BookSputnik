@@ -1,0 +1,160 @@
+/*
+ * Cinzel - Book Sputnik, h3
+*/
+
+@font-face {
+    font-family: 'CinzelRegular';
+    src: url('../fonts/cinzel/Cinzel-Regular.eot');
+    src: url('../fonts/cinzel/Cinzel-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cinzel/Cinzel-Regular.woff') format('woff'),
+         url('../fonts/cinzel/Cinzel-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CinzelBold';
+    src: url('../fonts/cinzel/Cinzel-Bold.eot');
+    src: url('../fonts/cinzel/Cinzel-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cinzel/Cinzel-Bold.woff') format('woff'),
+         url('../fonts/cinzel/Cinzel-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*
+ * Uni Sans Caps - надпись в слайдере, заголовки
+*/
+
+@font-face {
+    font-family: 'UniSansThin';
+    src: url('../fonts/unisans/Uni-Sans-Thin.otf');
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: 'UniSansThinItalic';
+    src: url('../fonts/unisans/Uni-Sans-Thin-Italic.otf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'UniSansHeavy';
+    src: url('../fonts/unisans/Uni-Sans-Heavy.otf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'UniSansHeavyItalic';
+    src: url('../fonts/unisans/Uni-Sans-Heavy-Italic.otf');
+    font-weight: normal;
+}
+
+
+
+/*
+ * Gentuim - дополнительные надписи
+*/
+
+@font-face {
+    font-family: 'GentiumPlus-i';
+    src: url('../fonts/gentuim/gentiumplus-i.eot');
+    src: url('../fonts/gentuim/gentiumplus-i.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gentuim/gentiumplus-i.woff') format('woff'),
+         url('../fonts/gentuim/gentiumplus-i.ttf') format('truetype');
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: 'GentiumPlus-r';
+    src: url('../fonts/gentuim/gentiumplus-r.eot');
+    src: url('../fonts/gentuim/gentiumplus-r.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gentuim/gentiumplus-r.woff') format('woff'),
+         url('../fonts/gentuim/gentiumplus-r.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*
+ * MuseoCyr - h2, h3, h4
+*/
+
+@font-face {
+    font-family: 'MuseoCyr';
+    src: url('../fonts/museocyr/museo_cyrillic_500.eot');
+    src: url('../fonts/museocyr/museo_cyrillic_500.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museocyr/museo_cyrillic_500.woff') format('woff'),
+         url('../fonts/museocyr/museo_cyrillic_500.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*
+ * Roboto - основной текст
+*/
+
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('../fonts/roboto/roboto-regular.eot');
+    src: url('../fonts/roboto/roboto-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto/roboto-regular.woff') format('woff'),
+         url('../fonts/roboto/roboto-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+    
+
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('roboto-bold.eot');
+    src: url('roboto-bold.eot?#iefix') format('embedded-opentype'),
+         url('roboto-bold.woff') format('woff'),
+         url('roboto-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'robotoitalic';
+    src: url('roboto-italic.eot');
+    src: url('roboto-italic.eot?#iefix') format('embedded-opentype'),
+         url('roboto-italic.woff') format('woff'),
+         url('roboto-italic.ttf') format('truetype');
+    font-weight: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'roboto_medium';
+    src: url('roboto-medium.eot');
+    src: url('roboto-medium.eot?#iefix') format('embedded-opentype'),
+         url('roboto-medium.woff') format('woff'),
+         url('roboto-medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'roboto_ltbold_italic';
+    src: url('roboto-mediumitalic.eot');
+    src: url('roboto-mediumitalic.eot?#iefix') format('embedded-opentype'),
+         url('roboto-mediumitalic.woff') format('woff'),
+         url('roboto-mediumitalic.ttf') format('truetype');
+    font-weight: bold;
+
+}
