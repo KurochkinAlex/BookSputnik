@@ -1,0 +1,35 @@
+.btn {
+	border-radius: 0;
+}
+.carousel .item {
+	height: 500px;
+	background-color: #777;
+}
+.carousel-control.right,
+.carousel-control.left {
+	background-image: none;
+}
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+	margin-right: -60px;
+}
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+	margin-left: -60px;
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+	background-color: initial;
+    border-color: initial; 
+}
+.nav > li > a:hover, .nav > li > a:focus {
+	background-color: transparent;
+}
+a:hover, a:focus {
+	color: #000;
+}
+.dropdown-menu {
+	border: none;
+	border-radius: inherit;
+	box-shadow: none;
+}
+.dropdown-menu a:hover {
+	background-color: inherit;
+}
