@@ -64,6 +64,16 @@ class DataBase
         return $stmt;
     }
     
+    public function update(array $fields, $tableName, array $values, $where) 
+    {
+        $tableName = $this->prefix . $tableName;
+        $query = "";
+        $query .= "UPDATE $tableName SET " . $this->pdoSet($fields) . " WHERE $where";
+        $stmt = $this->pdo->prepare($query);
+        $stmt = ($stmt->execute($values)) ? true : false;
+        return $stmt;
+    }
+    
     private function pdoSet(array $fields) 
     {
         $output = "";
