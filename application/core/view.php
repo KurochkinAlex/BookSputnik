@@ -3,6 +3,7 @@ class View
 {
     public function getContent($viewTemplate, $viewContent, $data = null) 
     {
-        return "application/views/" . $viewTemplate . ".php";
+        $viewContent = "application/views/" . $viewContent . ".php" ;
+        include "application/views/" . $viewTemplate . ".php";
     }
 }

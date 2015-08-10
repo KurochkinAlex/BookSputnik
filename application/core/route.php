@@ -20,7 +20,7 @@ final class Route
         $action = "action" . ucfirst($actionName);
         
         //work with model and establish connect with a controller
-        $modelFile = "application/models/" . $controllerName . ".php";
+        $modelFile = "application/models/" . $modelName . ".php";
         $controllerFile = "application/controllers/" . $controllerName . ".php";
         if (file_exists($modelFile)) {
             include $modelFile;
