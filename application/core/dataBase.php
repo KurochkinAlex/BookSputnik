@@ -53,4 +53,23 @@ class DataBase
         }
         return $stmt;
     }
+    
+    public function insert(array $fields, $tableName, array $values) 
+    {
+        $tableName = $this->prefix . $tableName;
+        $query = "";
+        $query .= "INSERT INTO $tableName SET " . $this->pdoSet($fields);
+        $stmt = $this->pdo->prepare($query);
+        $stmt = ($stmt->execute($values)) ? true : false;
+        return $stmt;
+    }
+    
+    private function pdoSet(array $fields) 
+    {
+        $output = "";
+        foreach ($fields as $field) {
+            $output .= "`" . $field . "`" . " = ?, ";
+        }
+        return substr($output, 0, -2);
+    }
 }

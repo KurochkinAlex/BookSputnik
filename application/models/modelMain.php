@@ -17,4 +17,9 @@ class ModelMain extends Model
         $data = $this->makeArrayToString($results);
         return $data;
     }
+    
+    public function insertCategories() 
+    {
+        return $this->db->insert(array("category_name", "inheritors"), "categories", array("new", "0"));
+    }    
 }

@@ -4,7 +4,7 @@ class ControllerMain extends Controller
     public function actionIndex() 
     {
         $model = new ModelMain();
-        $data = $model->getCategories();
+        $data = $model->insertCategories();
         return $this->view->getContent("viewTemplate", "viewMain", $data);
     }
 }
