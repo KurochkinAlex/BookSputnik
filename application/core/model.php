@@ -18,4 +18,9 @@ abstract class Model
         }
         return $data;
     }
+    
+    public function truncate() 
+    {
+        return $this->db->truncate("categories");
+    }
 }

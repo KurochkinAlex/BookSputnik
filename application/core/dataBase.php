@@ -66,11 +66,30 @@ class DataBase
     
     public function update(array $fields, $tableName, array $values, $where) 
     {
-        $tableName = $this->prefix . $tableName;
+        $tableName = "`" . $this->prefix . $tableName . "`";
         $query = "";
         $query .= "UPDATE $tableName SET " . $this->pdoSet($fields) . " WHERE $where";
         $stmt = $this->pdo->prepare($query);
         $stmt = ($stmt->execute($values)) ? true : false;
+        return $stmt;
+    }
+    
+    public function delete($tableName, $where, array $values) 
+    {
+        $tableName = "`" . $this->prefix . $tableName . "`";
+        $query = "";
+        $query = "DELETE FROM $tableName WHERE $where";
+        $stmt = $this->pdo->prepare($query);
+        $stmt = ($stmt->execute($values)) ? true : false;
+        return $stmt;
+    }
+    
+    public function truncate($tableName) 
+    {
+        $tableName = "`" . $this->prefix . $tableName . "`";
+        $query = "";
+        $query .= "TRUNCATE $tableName";
+        $stmt = ($this->query($query)) ? true : false;
         return $stmt;
     }
     

@@ -20,6 +20,16 @@ class ModelMain extends Model
     
     public function insertCategories() 
     {
-        return $this->db->insert(array("category_name", "inheritors"), "categories", array("new", "0"));
-    }    
+        return $this->db->insert(array("category_name", "inheritors"), "categories", array("Chekhov", "cherry orchard, the duel"));
+    }
+    
+    public function updateCategories() 
+    {
+        return $this->db->update(array("category_name", "inheritors"), "categories", array("update", "inheritors"), "id = 9");
+    }
+    
+    public function deleteCategories() 
+    {
+        return $this->db->delete("categories", "id = ?", array("9"));
+    }
 }
