@@ -29,6 +29,98 @@
     font-weight: normal;
 }
 
+/* font-family: "FundamentalRegular"; */
+@font-face {
+    font-family: "FundamentalRegular";
+    src: url("fonts/FundamentalRegular/FundamentalRegular.eot");
+    src: url("fonts/FundamentalRegular/FundamentalRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/FundamentalRegular/FundamentalRegular.woff") format("woff"),
+    url("fonts/FundamentalRegular/FundamentalRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "FundamentalBold"; */
+@font-face {
+    font-family: "FundamentalBold";
+    src: url("fonts/FundamentalBold/FundamentalBold.eot");
+    src: url("fonts/FundamentalBold/FundamentalBold.eot?#iefix")format("embedded-opentype"),
+    url("fonts/FundamentalBold/FundamentalBold.woff") format("woff"),
+    url("fonts/FundamentalBold/FundamentalBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "FundamentalBlack"; */
+@font-face {
+    font-family: "FundamentalBlack";
+    src: url("fonts/FundamentalBlack/FundamentalBlack.eot");
+    src: url("fonts/FundamentalBlack/FundamentalBlack.eot?#iefix")format("embedded-opentype"),
+    url("fonts/FundamentalBlack/FundamentalBlack.woff") format("woff"),
+    url("fonts/FundamentalBlack/FundamentalBlack.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "AlfiosRegular"; */
+@font-face {
+    font-family: "AlfiosRegular";
+    src: url("fonts/AlfiosRegular/AlfiosRegular.eot");
+    src: url("fonts/AlfiosRegular/AlfiosRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/AlfiosRegular/AlfiosRegular.woff") format("woff"),
+    url("fonts/AlfiosRegular/AlfiosRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "AlfiosBold"; */
+@font-face {
+    font-family: "AlfiosBold";
+    src: url("fonts/AlfiosBold/AlfiosBold.eot");
+    src: url("fonts/AlfiosBold/AlfiosBold.eot?#iefix")format("embedded-opentype"),
+    url("fonts/AlfiosBold/AlfiosBold.woff") format("woff"),
+    url("fonts/AlfiosBold/AlfiosBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "AlfiosItalic"; */
+@font-face {
+        font-family: "AlfiosItalic";
+    src: url("fonts/AlfiosItalic/AlfiosItalic.eot");
+    src: url("fonts/AlfiosItalic/AlfiosItalic.eot?#iefix")format("embedded-opentype"),
+    url("fonts/AlfiosItalic/AlfiosItalic.woff") format("woff"),
+    url("fonts/AlfiosItalic/AlfiosItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "AlfiosBoldItalic"; */
+@font-face {
+    font-family: "AlfiosBoldItalic";
+    src: url("fonts/AlfiosBoldItalic/AlfiosBoldItalic.eot");
+    src: url("fonts/AlfiosBoldItalic/AlfiosBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("fonts/AlfiosBoldItalic/AlfiosBoldItalic.woff") format("woff"),
+    url("fonts/AlfiosBoldItalic/AlfiosBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "FuturaRegular"; */
+@font-face {
+    font-family: "FuturaRegular";
+    src: url("fonts/FuturaRegular/FuturaRegular.eot");
+    src: url("fonts/FuturaRegular/FuturaRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/FuturaRegular/FuturaRegular.woff") format("woff"),
+    url("fonts/FuturaRegular/FuturaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "FuturaBold"; */
+@font-face {
+    font-family: "FuturaBold";
+    src: url("fonts/FuturaBold/FuturaBold.eot");
+    src: url("fonts/FuturaBold/FuturaBold.eot?#iefix")format("embedded-opentype"),
+    url("fonts/FuturaBold/FuturaBold.woff") format("woff"),
+    url("fonts/FuturaBold/FuturaBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 
 
 /*

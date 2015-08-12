@@ -24,6 +24,10 @@ body textarea:required:valid {
 	
 }
 
+a {
+    color: #000000;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -34,130 +38,10 @@ a:-webkit-any-link {
     text-decoration: none;
 }
 
-.top_menu{
-	height: 30px;
-	background-color: #010912;
-	color: #fff;
-	font-family: "ProximaNovaRegular", sans-serif;
-    font-size: 13px;
-	text-transform: uppercase;
-	align-items: center;
-	display: flex;
-
-}
-.top_menu a {
-	display: inline-block;
-	color: #ffffff;
-    letter-spacing: 1px;
-    padding: 0 15px 0 0;
-}
-.top_header ul {
-	list-style-type: none;
-	position: relative;
-	margin: 0;
-	padding: 0;
-}
-.top_menu_left li {
-	display: inline;
-	margin-right: 15px;
-	float: left;
-}
-.top_menu_left li a {
-
-}
-.top_menu_left img {
-    width: 25px;
-    margin: -3px 8px 0 5px;
-}
-.top_menu_right{
-    float: right;
-}
-.top_menu_right li {
-    display: inline;
-    margin-right: 15px;
-    float: right;
-}
-.top_menu_right li:last-child {
+.icons {
     position: absolute;
-    padding: 0;
-    margin: 0 0 0 10px;
-    right: -14px;
-}
-.header_logo {
-    margin-top: 10px;
-}
-header figure {
-    text-align: center;
-    font-family: "CinzelRegular", serif;
-}
-.logo h1 {
-    text-transform: uppercase;
-    font-size: 30px;
-    letter-spacing: 2px;
-    margin-bottom: 0;
-}
-.logo h4 {
-    margin-top: 4px;
-    font-size: 15px;
-    letter-spacing: 1px;
-    color: #999;
-    font-family: "ProximaNovaRegular", sans-serif;
-    font-weight: 400;
-}
-.searchbox {
-    float: right;
-    margin-top: -40px;
-}
-.searchbox input {
-    background-color: #ebebeb;
-    border: none;
-    color: #000;
-}
-.searchbox input::-webkit-input-placeholder       {line-height: 24px;  transition: line-height 0.5s ease;}
-.searchbox input::-moz-placeholder                {line-height: 24px;  transition: line-height 0.5s ease;}
-.searchbox input:-moz-placeholder                 {line-height: 24px;  transition: line-height 0.5s ease;}
-.searchbox input:-ms-input-placeholder            {line-height: 24px;  transition: line-height 0.5s ease;}
-.searchbox input:focus::-webkit-input-placeholder {line-height: 100px; transition: line-height 0.5s ease;}
-.searchbox input:focus::-moz-placeholder          {line-height: 100px; transition: line-height 0.5s ease;}
-.searchbox input:focus:-moz-placeholder           {line-height: 100px; transition: line-height 0.5s ease;}
-.searchbox input:focus:-ms-input-placeholder      {line-height: 100px; transition: line-height 0.5s ease;}
-
-.searchbox input::-webkit-input-placeholder {color:#A9A9A9; font-style: italic;
-    font-size: 12px;}
-.searchbox input::-moz-placeholder          {color:#A9A9A9; font-style: italic;
-    font-size: 12px;}/* Firefox 19+ */
-.searchbox input:-moz-placeholder           {color:#A9A9A9; font-style: italic;
-    font-size: 12px;}/* Firefox 18- */
-.searchbox input:-ms-input-placeholder      {color:#A9A9A9; font-style: italic;
-    font-size: 12px;}
-
-.searchbox i {
-    margin-left: -20px;
-    cursor: pointer;
-}
-.main_menu {
-    min-height: 40px;
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-}
-.main_menu ul {
-    float:none; text-align:center; display:table; list-style:none; width:100%;
-}
-.main_menu a {
-    font-family: "ProximaNovaRegular", sans-serif;
-    font-size: 13px;
-    color: #000;
-    text-transform: uppercase;
 }
 
-.main_menu ul li {
-    float:none; display:table-cell;
-
-}
-.main_menu ul li a{
-    display:block; line-height:20px; margin:0 5px;
-}
 #myCarousel {
     margin-top: 10px;
 }
@@ -187,30 +71,210 @@ span.glyphicon.glyphicon-menu-right {
     margin-top: -10px;
 }
 .main {
-    display: flex;
     align-items: center;
     margin-top: 35px;
 }
-.main ul {
-    float:none;
-    text-align:center;
-    display:table;
-    width:100%;
-    margin-bottom: 15px;
+.main .landing {
+    margin-bottom: 60px;
 }
-.main ul li {
-    float: left;
-    width: 300px;
-    height: 225px;
-    margin: 0;
+
+.best_books_divider {
+    margin-bottom: 13px;
+}
+.best_books_slider {
+    margin-top: 15px;
+}
+.preview_book {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
     text-align: center;
-    position: relative;
-    overflow: hidden;
-    float:none;
-    display:table-cell;
+    padding-top: 15%;
+    opacity: 0;
+    transition: all 0.35s;
 }
-.main ul li a {
-    display:block;
-    line-height:20px;
-    margin:0 5px;
+.preview_book .popup_content{
+    display: inline-block;
+    padding: 0 4px;
+    border: 1px solid #FF6347;
+    color: #FF6347;
+    margin-top: 10%;
+}
+.preview_book span {
+    color: #fff;
+    font-size: 13px;
+}
+.owl-carousel .item:hover .preview_book {
+    opacity: 1;
+    padding-top: 20%;
+}
+    /*#owl-demo .item{
+        background: transparent;
+        padding: 30px 0px;
+        margin: 10px;
+        color: #FFF;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        text-align: center;
+    }
+    #owl-demo .item {
+        padding: 0;
+    }*/
+.title {
+    text-align: center;
+    color: #000000;
+    letter-spacing: 2px;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.size-12 { font-size: 12px; }
+.size-14 { font-size: 14px; }
+.size-16 { font-size: 16px; }
+.size-18 { font-size: 18px; }
+.size-21 { font-size: 21px; }
+.size-24 { font-size: 24px; }
+.size-36 { font-size: 36px; }
+.size-48 { font-size: 48px; }
+.size-60 { font-size: 60px; }
+.size-72 { font-size: 72px; }
+
+.main .ship_info {
+    margin-top: 55px;
+}
+.main .ship_info .ship_item {
+    background-color: #F4F4F4;
+    text-align: center;
+    height: 80px;
+}
+.main .ship_info .ship_item:hover {
+    background-color: #ad3434;
+    color: #fff;
+    fill: #fff;
+}
+.main .ship_info .ship_item:hover svg {
+    fill: #fff;
+}
+.main .ship_info .ship_item span {
+    position: absolute;
+    top: 50%;
+    margin-left: 1%;
+    margin-top: -21px;
+    font-family: "FundamentalRegular", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+.main .ship_info .col-md-4 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.main .ship_info .ship_item a {
+}
+.ship_icon {
+    position: absolute;
+    width: 59px;
+    height: 85px;
+    margin-left: -26%;
+    fill: rgb(43, 40, 40);
+}
+.ship_car {
+    width: 59px
+}
+.main .ship_info .ship_item span {
+    margin-left: -2%;
+}
+.ship_box {
+    width: 53px;
+}
+.ship_stopwatch {
+    width: 44px;
+    margin-left: -25%;
+}
+.main_footer {
+    background-color: #F5F5F5;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.footer_wrapper {
+    padding: 0 63px 0 63px;
+}
+.main_footer .column .left {
+    text-align: left;
+}
+.main_footer .column {
+    float: left;
+}
+.main_footer .column h5 {
+    font-family: "AlfiosItalic", serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+}
+.main_footer .column p {
+    font-family: "ProximaNovaRegular", sans-serif;
+    margin: 0;
+}
+.icons.footer_phone {
+    height: 16px;
+    width: 16px;
+    margin-top: 5px;
+    margin-left: -1px;
+}
+.icons.footer_mail {
+    width: 16px;
+    height: 16px;
+    margin-top: 6px;
+    margin-left: -1px;
+}
+.column.center {
+    text-align: center;
+}
+.column.center h6 {
+    font-family: "FundamentalBold", sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+.main_footer .center.column a:hover svg {
+    fill: #ad3434;
+}
+.column.right {
+    text-align: right;
+}
+.column.right h5 {
+    font-family: "FuturaRegular", sans-serif;
+    font-size: 24px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+}
+#footer_form .email {
+    font-size: 12px;
+    font-style: italic;
+    color: #555;
+    width: 200px;
+    border: 1px solid #20201f;
+    height: 26px;
+    vertical-align: middle;
+}
+.sign-up {
+    background-color: #ad3434;
+    border: 0 none;
+    color: #fff;
+    cursor: pointer;
+    font-family: arial;
+    font-weight: normal;
+    font-size: 11px;
+    height: 26px;
+    line-height: 26px;
+    text-transform: uppercase;
+    width: 80px;
+    padding: 0;
+    margin-left: 1px;
 }
