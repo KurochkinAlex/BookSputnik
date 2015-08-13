@@ -5,14 +5,14 @@ class ModelMain extends Model
     {
         $output = "";
         foreach ($input as $value) {
-            $output .= $value["id"] ." - " . $value["category_name"] . "<br>";
+            $output .= $value["category_name"] . "<br>";
         }
         return $output;
     }
     
-    public function getCategories() 
+    public function getCategories(array $fields, $tableName, $where = "", array $parameters = array(), $order = "", $up = true)
     {
-        $results = $this->db->select(array("id", "category_name"), "categories");
+        $results = $this->db->select($fields, $tableName, $where = "", $parameters = array(), $order = "", $up = true);
         $results = $this->getData($results);
         $data = $this->makeArrayToString($results);
         return $data;

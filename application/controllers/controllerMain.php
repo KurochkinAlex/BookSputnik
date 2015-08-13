@@ -5,8 +5,7 @@ class ControllerMain extends Controller
     {
         $model = new ModelMain();
         $data = array();
-        $data["insert"] = $model->insertCategories();
-        $data["select"] = $model->getCategories();
+        $data["select"] = $model->getCategories(array("category_name"), "categories");
         return $this->view->getContent("viewTemplate", "viewMain", $data);
     }
 }
