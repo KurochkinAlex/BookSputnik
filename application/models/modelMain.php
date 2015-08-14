@@ -3,7 +3,6 @@ class ModelMain extends Model
 {
     private function makeArrayToString(array $input) 
     {
-        $output = "";
         return $output;
     }
     
