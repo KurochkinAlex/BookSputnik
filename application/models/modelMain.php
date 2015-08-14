@@ -4,9 +4,6 @@ class ModelMain extends Model
     private function makeArrayToString(array $input) 
     {
         $output = "";
-        foreach ($input as $value) {
-            $output .= $value["category_name"] . "<br>";
-        }
         return $output;
     }
     
