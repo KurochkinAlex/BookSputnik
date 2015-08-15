@@ -1,12 +1,151 @@
 body {
-	font-family: sans-serif;
 	font-size: 16px;
 	min-width: 320px;
 	position: relative;
 	line-height: 1.6;
 	font-family: "RobotoRegular", sans-serif;
-	overflow-x: hidden;
+
+
 }
 .hidden {
 	display: none;
+}
+.top_menu{
+    height: 30px;
+    background-color: #010912;
+    color: #fff;
+    font-family: "ProximaNovaRegular", sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    align-items: center;
+    display: flex;
+
+}
+.top_menu a {
+    display: inline-block;
+    color: #ffffff;
+    letter-spacing: 1px;
+    padding: 0 15px 0 0;
+}
+.top_header ul {
+    list-style-type: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.top_menu_left li {
+    display: inline;
+    margin-right: 15px;
+    float: left;
+}
+.top_menu_left li a {
+
+}
+.top_menu_left img {
+    width: 25px;
+    margin: -3px 8px 0 5px;
+}
+.top_menu_right{
+    float: right;
+}
+.top_menu_right li {
+    display: inline;
+    margin-right: 15px;
+    float: right;
+}
+.icons.cart {
+    fill: rgb(255, 255, 255);
+    margin-top: -90%;
+    margin-left: -120%;
+    width: 20px;
+    height: 20px;
+}
+.top_menu_right li:last-child {
+    position: absolute;
+    padding: 0;
+    margin: 0 0 0 10px;
+    right: -14px;
+}
+.header_logo {
+    margin-top: 10px;
+}
+header figure {
+    text-align: center;
+    font-family: "CinzelRegular", serif;
+}
+.logo h1 {
+    text-transform: uppercase;
+    font-size: 26px;
+    letter-spacing: 4px;
+    margin-bottom: 0;
+    color: #000;
+}
+.logo h4 {
+    margin-top: 4px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #999;
+    font-family: "ProximaNovaRegular", sans-serif;
+    font-weight: 400;
+}
+.searchbox {
+    float: right;
+    margin-top: -40px;
+}
+.searchbox input {
+    background-color: #ebebeb;
+    border: none;
+    color: #000;
+}
+.icons.magnifier {
+    fill: rgb(0, 0, 0);
+    margin-top: 2px;
+    margin-left: -25px;
+    width: 22px;
+    height: 22px;
+}
+.searchbox input::-webkit-input-placeholder       {line-height: 24px;  transition: line-height 0.5s ease;}
+.searchbox input::-moz-placeholder                {line-height: 24px;  transition: line-height 0.5s ease;}
+.searchbox input:-moz-placeholder                 {line-height: 24px;  transition: line-height 0.5s ease;}
+.searchbox input:-ms-input-placeholder            {line-height: 24px;  transition: line-height 0.5s ease;}
+.searchbox input:focus::-webkit-input-placeholder {line-height: 100px; transition: line-height 0.5s ease;}
+.searchbox input:focus::-moz-placeholder          {line-height: 100px; transition: line-height 0.5s ease;}
+.searchbox input:focus:-moz-placeholder           {line-height: 100px; transition: line-height 0.5s ease;}
+.searchbox input:focus:-ms-input-placeholder      {line-height: 100px; transition: line-height 0.5s ease;}
+
+.searchbox input::-webkit-input-placeholder {color:#A9A9A9; font-style: italic;
+    font-size: 12px;}
+.searchbox input::-moz-placeholder          {color:#A9A9A9; font-style: italic;
+    font-size: 12px;}/* Firefox 19+ */
+.searchbox input:-moz-placeholder           {color:#A9A9A9; font-style: italic;
+    font-size: 12px;}/* Firefox 18- */
+.searchbox input:-ms-input-placeholder      {color:#A9A9A9; font-style: italic;
+    font-size: 12px;}
+
+.searchbox i {
+    margin-left: -20px;
+    cursor: pointer;
+}
+.main_menu {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.main_menu ul {
+    float:none; text-align:center; display:table; list-style:none; width:100%;
+}
+.main_menu a {
+    font-family: "ProximaNovaRegular", sans-serif;
+    font-size: 13px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.main_menu ul li {
+    float:none; display:table-cell;
+
+}
+.main_menu ul li a{
+    display:block; line-height:20px; margin:0 5px;
 }
