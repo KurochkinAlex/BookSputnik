@@ -373,6 +373,7 @@
                                         </g>
                                 </svg>
 
+<<<<<<< HEAD
                                 <span>FREE RETURNS <br/>IN RUSSIA</span>
                             </div>
                         </a>
@@ -407,6 +408,9 @@
         </div>
     </div>
 
+=======
+<?php //include $viewContent; ?>
+>>>>>>> KurochkinAlex/master
 
     <footer>
         <div class="main_footer">

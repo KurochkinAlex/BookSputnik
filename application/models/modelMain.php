@@ -1,16 +1,10 @@
 <?php
 class ModelMain extends Model 
 {
-    private function makeArrayToString(array $input) 
-    {
-        return $output;
-    }
-    
     public function getCategories(array $fields, $tableName, $where = "", array $parameters = array(), $order = "", $up = true)
     {
         $results = $this->db->select($fields, $tableName, $where = "", $parameters = array(), $order = "", $up = true);
-        $results = $this->getData($results);
-        $data = $this->makeArrayToString($results);
+        $data = $this->getData($results);
         return $data;
     }
     
