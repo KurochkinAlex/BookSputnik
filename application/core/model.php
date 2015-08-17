@@ -1,7 +1,7 @@
 <?php
 abstract class Model 
 {
-    public $db;
+    /*public $db;
     
     public function __construct() 
     {
@@ -22,5 +22,5 @@ abstract class Model
     public function truncate() 
     {
         return $this->db->truncate("categories");
-    }
+    }*/
 }

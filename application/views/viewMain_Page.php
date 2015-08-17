@@ -1,4 +1,8 @@
+<<<<<<< HEAD
  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+=======
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+>>>>>>> origin/master
         <div class="carousel-inner" role="listbox">
             <div class="item active">
                 <a href="#" class="slide_img" style="background-image:url(images/1.png)"></a>
@@ -190,6 +194,7 @@
                                         </g>
                                 </svg>
 
+<<<<<<< HEAD
                                 <span>FREE RETURNS <br/>IN RUSSIA</span>
                             </div>
                         </a>
