@@ -182,7 +182,7 @@
         </div>
 	</header>
 
-<?php //include $viewContent; ?>
+<?php include $viewContent; ?>
 
     <footer>
         <div class="main_footer">
