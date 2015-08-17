@@ -5,7 +5,12 @@ class ControllerMain extends Controller
     {
         $model = new ModelMain();
         $data = array();
+<<<<<<< HEAD
+        #$data["select"] = $model->getCategories(array("category_name"), "categories");
+        return $this->view->getContent("viewTemplate", "viewMain", $data);
+=======
         //$data["select"] = $model->getCategories(array("category_name"), "categories");
         return $this->view->getContent("viewTemplate", "viewMain_page", $data);
+>>>>>>> KurochkinAlex/master
     }
 }

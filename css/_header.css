@@ -1,14 +1,14 @@
 body {
-	font-size: 16px;
-	min-width: 320px;
-	position: relative;
-	line-height: 1.6;
-	font-family: "RobotoRegular", sans-serif;
+    font-size: 16px;
+    min-width: 320px;
+    position: relative;
+    line-height: 1.6;
+    font-family: "RobotoRegular", sans-serif;
 
 
 }
 .hidden {
-	display: none;
+    display: none;
 }
 .top_menu{
     height: 30px;
@@ -133,7 +133,15 @@ header figure {
     margin-top: 10px;
 }
 .main_menu ul {
-    float:none; text-align:center; display:table; list-style:none; width:100%;
+            float:none; text-align:center;
+    display: inline-table;
+    position: relative;
+            list-style:none; width:100%;
+}
+.main_menu ul:after {
+    content: '';
+    clear: both;
+    display: block;
 }
 .main_menu a {
     font-family: "ProximaNovaRegular", sans-serif;
@@ -141,11 +149,48 @@ header figure {
     color: #000;
     text-transform: uppercase;
 }
-
+.main_menu a:hover {
+    color: #DC2222;
+    /*border-bottom: 2px solid #000;*/
+}
 .main_menu ul li {
     float:none; display:table-cell;
 
 }
 .main_menu ul li a{
     display:block; line-height:20px; margin:0 5px;
+}
+.main_menu ul ul {
+    display: none;
+    z-index: 5;
+}
+.main_menu ul li:hover > ul {
+    display: block;
+}
+.main_menu ul ul {
+    background: #fff;
+    padding: 18px 0 0 0;
+    position: absolute;
+    top: 100%;
+    width: inherit;
+
+}
+.main_menu ul ul li {
+    float: none;
+    position: relative;
+    display: list-item;
+    border-left: 1px solid #E2E2E2;
+    border-right: 1px solid #E2E2E2;
+}
+.main_menu ul ul li a {
+    padding: 8px 30px 10px 15px;
+    color: #000;
+    margin: 0;
+    text-align: left;
+    font-family: "RobotoRegular", sans-serif;
+    text-transform: none;
+}
+.main_menu ul ul li a:hover {
+    background-color: rgba(200,200,200,0.1);
+
 }
