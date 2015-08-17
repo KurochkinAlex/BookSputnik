@@ -1,27 +1,27 @@
 *::-webkit-input-placeholder {
-	color: #666;
-	opacity: 1;
+    color: #666;
+    opacity: 1;
 }
 *:-moz-placeholder {
-	color: #666;
-	opacity: 1;
+    color: #666;
+    opacity: 1;
 }
 *::-moz-placeholder {
-	color: #666;
-	opacity: 1;
+    color: #666;
+    opacity: 1;
 }
 *:-ms-input-placeholder {
-	color: #666;
-	opacity: 1;
+    color: #666;
+    opacity: 1;
 }
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
-	
+    
 }
 body input:required:valid,
 body textarea:required:valid {
-	
+    
 }
 
 a {
@@ -77,12 +77,29 @@ span.glyphicon.glyphicon-menu-right {
 .main .landing {
     margin-bottom: 60px;
 }
-
+.main .landing_item {
+    background-position: center;
+    background-size: cover;
+    height: 208px;
+}
 .best_books_divider {
     margin-bottom: 13px;
 }
 .best_books_slider {
     margin-top: 15px;
+}
+.item_outside {
+
+}
+.item_outside span {
+    opacity: 0;
+    position: absolute;
+    top: 151px;
+    left: 15px;
+    width: 85px;
+}
+.item_outside:hover span {
+    opacity: 1;
 }
 .preview_book {
     position: absolute;
@@ -102,6 +119,7 @@ span.glyphicon.glyphicon-menu-right {
     border: 1px solid #FF6347;
     color: #FF6347;
     margin-top: 10%;
+    font-size: 13px;
 }
 .preview_book span {
     color: #fff;
@@ -262,7 +280,25 @@ span.glyphicon.glyphicon-menu-right {
     border: 1px solid #20201f;
     height: 26px;
     vertical-align: middle;
+
 }
+#footer_form .email::-webkit-input-placeholder       {line-height: 24px;  transition: line-height 0.5s ease;}
+#footer_form .email::-moz-placeholder                {line-height: 24px;  transition: line-height 0.5s ease;}
+#footer_form .email:-moz-placeholder                 {line-height: 24px;  transition: line-height 0.5s ease;}
+#footer_form .email:-ms-input-placeholder            {line-height: 24px;  transition: line-height 0.5s ease;}
+#footer_form .email:focus::-webkit-input-placeholder {line-height: 100px; transition: line-height 0.5s ease;}
+#footer_form .email:focus::-moz-placeholder          {line-height: 100px; transition: line-height 0.5s ease;}
+#footer_form .email:focus:-moz-placeholder           {line-height: 100px; transition: line-height 0.5s ease;}
+#footer_form .email:focus:-ms-input-placeholder      {line-height: 100px; transition: line-height 0.5s ease;}
+
+#footer_form .email::-webkit-input-placeholder {color:#A9A9A9; font-style: italic;
+    font-size: 12px;}
+#footer_form .email::-moz-placeholder          {color:#A9A9A9; font-style: italic;
+    font-size: 12px;}/* Firefox 19+ */
+#footer_form .email:-moz-placeholder           {color:#A9A9A9; font-style: italic;
+    font-size: 12px;}/* Firefox 18- */
+#footer_form .email:-ms-input-placeholder      {color:#A9A9A9; font-style: italic;
+    font-size: 12px;}
 .sign-up {
     background-color: #ad3434;
     border: 0 none;

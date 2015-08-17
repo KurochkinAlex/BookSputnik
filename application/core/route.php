@@ -1,7 +1,7 @@
 <?php
 final class Route 
 {
-    public function getStart() 
+    static public function getStart() 
     {
         // Create the base part of routes; 
         $controllerName = "Main";
